@@ -1,0 +1,316 @@
+/* Color Palette and Typography */
+:root {
+    --primary: #2c3e50;
+    --accent: #8e44ad;
+    --background: #f8f9fa;
+    --text: #2c3e50;
+    --border: #e9ecef;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--text);
+    background-color: var(--background);
+    line-height: 1.6;
+    max-width: 1400px;  
+    margin: 0 auto;   
+    padding: 0 4rem;
+}
+
+/* Typography */
+h1 {
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+p {
+    margin-top: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+    color: #000000;
+    font-style: normal; 
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation Classes */
+.fade-in { animation: fadeIn 1s ease-out; }
+.slide-in { animation: slideIn 1s ease-out; }
+.slide-up { animation: slideUp 1s ease-out; }
+.zoom-hover { transition: transform 0.3s ease; }
+.zoom-hover:hover { transform: scale(1.05); }
+.zoom-on-scroll { transition: transform 0.3s ease; }
+.zoom-on-scroll:hover { transform: scale(1.05); }
+.highlight-text { 
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.highlight-text:hover { transform: translateY(-5px); }
+
+/* Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.text-content {
+    text-align: left;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Main */
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.showcase-item {
+    flex: 1;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.showcase-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.showcase-item:hover img {
+    transform: scale(1.02);
+}
+
+.showcase-item h2 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+}
+
+.showcase-item h2 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.showcase-item h2 a:hover {
+    color: var(--accent);
+}
+
+/* Philanthropy Page */
+.philanthropy-content {
+    padding: 2rem 0;
+}
+
+.project-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.website-link a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.website-link a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.content-block {
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.content-block img {
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.content-block p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Video Section */
+.video-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.video-container h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background: #000;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.video-container .description {
+    background: var(--background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.video-container .description p {
+    font-family: 'EB Garamond', serif;
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
+
