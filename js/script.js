@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const revealElements = document.querySelectorAll(".content-block");
+document.addEventListener('DOMContentLoaded', function () {
+  const revealElements = document.querySelectorAll('.content-block');
 
   function reveal() {
     revealElements.forEach((element) => {
@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const windowHeight = window.innerHeight;
 
       if (elementTop < windowHeight - 150) {
-        element.classList.add("active");
+        element.classList.add('active');
       }
     });
   }
 
-  window.addEventListener("scroll", reveal);
+  window.addEventListener('scroll', reveal);
   reveal();
 });
