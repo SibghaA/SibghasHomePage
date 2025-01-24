@@ -63,6 +63,9 @@ A personal portfolio website showcasing Sibgha Ahmad's professional work, projec
 ├── js/
 │ └── script.js # Core functionality
 └── pictures/ # Media assets
+└── videos/ # Media assets
+└── docs/ #  docs to link
+
 
 ## Dependencies
 
@@ -95,4 +98,4 @@ MIT License
 
 ## Screenshots
 
-![image](screenshot.png)
+![image](/pictures/screenshot.png)
