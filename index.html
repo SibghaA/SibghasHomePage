@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      property="viewport"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
@@ -12,20 +16,24 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <script src="/js/script.js"></script>
-    <title>Sibgha's Homepage</title>
+    <script src="/js/script.js" type="module"></script>
+    <title>Sibgha Ahmad - Student and Software Engineer</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <meta name="author" content="Sibgha Ahmad" />
     <meta
       name="description"
-      content="A page that describes the achievements of Sibgha Ahmad."
+      content="Portfolio of Sibgha Ahmad - Student, aspiring software engineer, and tech enthusiast."
     />
   </head>
   <body>
     <header>
       <div class="text-content">
         <h1>Sibgha Ahmad</h1>
-        <p>full-stack engineer</p>
+        <p>student, software engineer in the making and ever-curious</p>
       </div>
 
       <nav>
@@ -36,29 +44,90 @@
       </nav>
     </header>
 
-    <main class="fade-in">
-      <div class="showcase slide-up">
-        <div class="showcase-item">
-          <h2><a href="/about.html">About</a></h2>
-          <img src="sibgha.jpg" alt="About me" />
+    <main>
+      <!-- Hero Section -->
+      <section class="homepage-intro fade-in">
+        <div class="homepage-intro-content">
+          <div>
+            <img
+              src="/pictures/sib2.jpg"
+              alt="Sibgha Ahmad"
+              class="profile-image"
+            />
+            <div class="click-me">Click My Pic!</div>
+          </div>
+          <div class="intro-text slide-up">
+            <h2>Hello, I'm Sibgha</h2>
+            <p>
+              Exploring the intersection of technology and social impact through
+              software engineering and education.
+            </p>
+            <div class="intro-buttons">
+              <a href="/about.html" class="intro-cta-button"
+                >Learn More About Me</a
+              >
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="showcase-item">
-          <h2><a href="/projects.html">Projects</a></h2>
-          <img src="/LastBiteStanding.jpg" alt="Projects" />
-        </div>
+      <!-- Project Showcase -->
+      <section class="showcase-section">
+        <div class="showcase">
+          <div class="showcase-item">
+            <div class="showcase-image">
+              <h2 class="section-title slide-in">
+                <a href="/projects.html">Projects</a>
+              </h2>
 
-        <div class="showcase-item">
-          <h2><a href="/philanthropy.html">Philanthropy</a></h2>
-          <img src="/SiliconPrep.jpg" alt="Teaching" />
+              <img
+                src="/pictures/LastBiteStanding.jpg"
+                alt="Last Bite Standing Project"
+              />
+            </div>
+            <div class="showcase-details">
+              <a href="/projects.html" class="learn-more">View Project →</a>
+            </div>
+          </div>
+
+          <div class="showcase-item">
+            <div class="showcase-image">
+              <h2 class="section-title slide-in">
+                <a href="/philanthropy.html">Philanthropy</a>
+              </h2>
+
+              <img
+                src="/pictures/SiliconPrep.jpg"
+                alt="SiliconPrep Initiative"
+              />
+            </div>
+            <div class="showcase-details">
+              <p>Empowering students through software engineering education</p>
+              <a href="/philanthropy.html" class="learn-more">Learn More →</a>
+            </div>
+          </div>
+
+          <div class="showcase-item">
+            <div class="showcase-image">
+              <h2 class="section-title slide-in">
+                <a href="/about.html">About me</a>
+              </h2>
+
+              <img src="/pictures/sib.jpg" alt="About Me" />
+            </div>
+            <div class="showcase-details">
+              <p>Learn more about my journey, experiences, and aspirations</p>
+              <a href="/about.html" class="learn-more">Read More →</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
+
     <footer>
       <div class="social-links">
         <a href="mailto:ahmad.si@northeastern.edu" aria-label="Email">
-          <i class="far fa-envelope"></i>
-          ahmad.si@northeastern.edu
+          <i class="fas fa-envelope" aria-hidden="true"></i>
         </a>
 
         <a
@@ -67,8 +136,7 @@
           rel="noopener noreferrer"
           aria-label="LinkedIn Profile"
         >
-          <i class="fab fa-linkedin"></i>
-          LinkedIn
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
         </a>
 
         <a
@@ -77,8 +145,7 @@
           rel="noopener noreferrer"
           aria-label="GitHub Profile"
         >
-          <i class="fab fa-github"></i>
-          GitHub
+          <i class="fab fa-github" aria-hidden="true"></i>
         </a>
       </div>
     </footer>

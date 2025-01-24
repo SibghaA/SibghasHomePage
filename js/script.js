@@ -1,17 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const revealElements = document.querySelectorAll('.content-block');
-
-  function reveal() {
-    revealElements.forEach((element) => {
-      const elementTop = element.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-
-      if (elementTop < windowHeight - 150) {
-        element.classList.add('active');
-      }
-    });
+const img = document.querySelector('.profile-image'); // Replace with your image selector
+img.addEventListener('click', function () {
+  if (this.style.transform === 'rotate(180deg)') {
+    this.style.transform = 'rotate(0deg)';
+  } else {
+    this.style.transform = 'rotate(180deg)';
   }
-
-  window.addEventListener('scroll', reveal);
-  reveal();
 });

@@ -2,10 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      property="viewport"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Projects</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <meta name="author" content="Sibgha Ahmad" />
     <meta
       name="description"
@@ -16,7 +24,7 @@
     <header>
       <div class="text-content">
         <h1>Sibgha Ahmad</h1>
-        <p>full-stack engineer</p>
+        <p>student, software engineer in the making and ever-curious</p>
       </div>
 
       <nav>
@@ -28,38 +36,105 @@
     </header>
     <main class="fade-in">
       <div class="projects-content slide-up">
-        <div class="LastBiteStanding">
+        <div class="project-card">
+          <h2>
+            Bias Mitigation in ML Algorithms for Chronic Disease Detection
+          </h2>
+          <p>
+            A comparative analysis of IBM's AIF360 toolkit for reducing bias in
+            healthcare ML models.
+          </p>
+          <p>
+            This research project explores the critical intersection of machine
+            learning and healthcare equity, focusing on bias mitigation in
+            chronic disease detection algorithms. Using IBM's AI Fairness 360
+            (AIF360) toolkit, we developed and analyzed various ML models for
+            heart disease prediction, implementing comprehensive bias detection
+            and mitigation strategies. The study achieved significant results in
+            reducing gender-based disparities while maintaining high model
+            performance, with the Multilayer Perceptron (MLP) emerging as the
+            best-performing model with a recall of 0.822 and an F1 score of
+            0.778.
+          </p>
+          <p>
+            Technologies and Methods Used: Python, IBM's AIF360 Toolkit,
+            Scikit-learn, Neural Networks, Support Vector Machines, Gradient
+            Boosting, Statistical Analysis, Data Preprocessing, Bias Detection
+            and Mitigation Techniques.
+          </p>
+          <p>
+            View the full research paper
+            <a
+              href="/docs/BiasMitigation.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >here</a
+            >
+          </p>
+        </div>
+
+        <div class="project-card">
           <h2>Last Bite Standing</h2>
           <p>An app that makes group decision making easier and gamifies it.</p>
-          <p class="aboutLastBiteStanding">
+          <p>
             LastBite is a social decision-making app that solves the common
             problem of group dining indecision. The app gamifies restaurant
             selection by allowing each participant to input their preferred
             cuisine type and then takes turns letting players veto options they
-            don't want. Using Google Maps and Places API integration, LastBite
-            automatically fetches nearby restaurants based on the group's
-            cuisine preferences, along with ratings and location data. Players
-            take turns viewing restaurant cards and can swipe left to veto
-            options they dislike. The app also adds a "special pick" - a
-            highly-rated restaurant of a different cuisine type - to broaden
-            dining horizons. Once all vetos are used, the final remaining
-            restaurant is selected, and users can immediately open it in Google
-            Maps for directions. This interactive approach makes group
-            restaurant selection fun while ensuring everyone has a say in the
-            final decision.
+            don't want.
           </p>
           <p>
             Technologies used: Android SDK, Java Development Kit (JDK), Gradle,
-            Google APIs Integration, Location & Permission Handling, Android
+            Google APIs Integration, Location and Permission Handling, Android
             Support Libraries, Data Management, JUnit.
           </p>
+          <p>
+            Project GitHub
+            <a
+              href="https://github.com/SibghaA/5004/tree/main/Final%20Project%205004"
+              target="_blank"
+              rel="noopener noreferrer"
+              >here</a
+            >
+          </p>
 
-          <div class="video-container">
-            <h3>Last Bite Standing Demo</h3>
-            <video controls>
-              <source src="demo.mov" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+          <div class="demo-showcase">
+            <div class="demo-title-bar">
+              <h3>Last Bite Standing Demo</h3>
+            </div>
+            <div class="demo-wrapper">
+              <div class="demo-player">
+                <video controls>
+                  <source
+                    src="/videos/LastBiteStandingdemo.mov"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div class="demo-features">
+                <h4>Application Features</h4>
+                <div class="features-grid">
+                  <div class="feature-block">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Google Maps & Places API Integration</span>
+                  </div>
+                  <div class="feature-block">
+                    <i class="fas fa-users"></i>
+                    <span>Multi-player Group Decision Making</span>
+                  </div>
+                  <div class="feature-block">
+                    <i class="fas fa-utensils"></i>
+                    <span>Restaurant Recommendations</span>
+                  </div>
+                  <div class="feature-block">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Interactive Veto System</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -68,8 +143,7 @@
     <footer>
       <div class="social-links">
         <a href="mailto:ahmad.si@northeastern.edu" aria-label="Email">
-          <i class="far fa-envelope"></i>
-          ahmad.si@northeastern.edu
+          <i class="fas fa-envelope" aria-hidden="true"></i>
         </a>
 
         <a
@@ -78,8 +152,7 @@
           rel="noopener noreferrer"
           aria-label="LinkedIn Profile"
         >
-          <i class="fab fa-linkedin"></i>
-          LinkedIn
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
         </a>
 
         <a
@@ -88,8 +161,7 @@
           rel="noopener noreferrer"
           aria-label="GitHub Profile"
         >
-          <i class="fab fa-github"></i>
-          GitHub
+          <i class="fab fa-github" aria-hidden="true"></i>
         </a>
       </div>
     </footer>
