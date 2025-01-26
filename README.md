@@ -4,6 +4,12 @@
 
 Sibgha Ahmad
 
+## Useful links
+
+Video demo: https://www.youtube.com/watch?v=B3Dgci6hFAg
+Slides: https://docs.google.com/presentation/d/173udxKcTWpUqXO0s4G78dbahD32vD-9YE8HUY5v1HQg/edit#slide=id.g328faf9dee1_0_35
+Design document: https://github.com/SibghaA/SibghasHomePage/blob/master/docs/Homepage_Design%20Docs.pdf
+
 ## Project Objective
 
 A personal portfolio website showcasing Sibgha Ahmad's professional work, projects, and philanthropic initiatives. The website serves as a comprehensive platform to highlight achievements and connect with potential collaborators and employers.
@@ -54,6 +60,7 @@ A personal portfolio website showcasing Sibgha Ahmad's professional work, projec
 
 ## Project Structure
 
+```
 ├── index.html # Home page
 ├── about.html # About/Timeline page
 ├── projects.html # Project showcase
@@ -65,6 +72,7 @@ A personal portfolio website showcasing Sibgha Ahmad's professional work, projec
 └── pictures/ # Media assets
 └── videos/ # Media assets
 └── docs/ # docs to link
+```
 
 ## Dependencies
 
@@ -77,6 +85,14 @@ Chrome (latest)
 Firefox (latest)
 Safari (latest)
 Edge (latest)
+
+## References
+
+All pictures used are my own
+
+## GenAI tools
+
+Used Claude 3.5 Sonnet for trouble shooting some errors in code I wrote
 
 ## Setup Instructions
 

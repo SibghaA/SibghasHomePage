@@ -1,14 +1,14 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import htmlPlugin from "eslint-plugin-html";
-import eslintConfigPrettier from "eslint-config-prettier";
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import htmlPlugin from 'eslint-plugin-html';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   pluginJs.configs.recommended,
   eslintConfigPrettier,
   {
-    files: ["**/*.html"],
+    files: ['**/*.html'],
     plugins: { htmlPlugin },
   },
   {
@@ -18,8 +18,8 @@ export default [
         ...globals.node,
       },
 
-      ecmaVersion: "latest",
-      sourceType: "module",
+      ecmaVersion: 'latest',
+      sourceType: 'module',
 
       parserOptions: {
         ecmaFeatures: {
@@ -29,16 +29,16 @@ export default [
     },
     rules: {
       indent: [
-        "error",
+        'error',
         2,
         {
           SwitchCase: 1,
         },
       ],
-      "linebreak-style": ["error", "unix"],
-      quotes: ["error", "double"],
-      semi: ["error", "always"],
-      "no-console": 0,
+      'linebreak-style': ['error', 'unix'],
+      quotes: ['error', 'double'],
+      semi: ['error', 'always'],
+      'no-console': 0,
     },
   },
 ];
