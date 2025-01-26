@@ -6,9 +6,9 @@ Sibgha Ahmad
 
 ## Useful links
 
-Video demo: https://www.youtube.com/watch?v=B3Dgci6hFAg
-Slides: https://docs.google.com/presentation/d/173udxKcTWpUqXO0s4G78dbahD32vD-9YE8HUY5v1HQg/edit#slide=id.g328faf9dee1_0_35
-Design document: https://github.com/SibghaA/SibghasHomePage/blob/master/docs/Homepage_Design%20Docs.pdf
+- Video demo: https://www.youtube.com/watch?v=B3Dgci6hFAg
+- Slides: https://docs.google.com/presentation/d/173udxKcTWpUqXO0s4G78dbahD32vD-9YE8HUY5v1HQg/edit#slide=id.g328faf9dee1_0_35
+- Design document: https://github.com/SibghaA/SibghasHomePage/blob/master/docs/Homepage_Design%20Docs.pdf
 
 ## Project Objective
 
